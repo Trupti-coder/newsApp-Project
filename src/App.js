@@ -1,6 +1,8 @@
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+
 import './App.css';
+import SearchBar from './components/SearchBar';
 
 function App() {
 
@@ -10,11 +12,26 @@ function App() {
   const[query,setQuery]=useState('');
 
 
-  
+  useEffect(()=>{
+    fetchNews(category,query).then(setArticles)
+  },[category,query])
+
 
 
   return (
     <>
+    <div>
+
+    <h1>News Reader App</h1>
+    
+    <SearchBar />
+  
+    </div>
+
+    
+
+
+
     </>
   );
 }
