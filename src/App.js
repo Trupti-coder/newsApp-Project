@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 
 import './App.css';
 import SearchBar from './components/SearchBar';
+import categoryFilter from './components/CategoryFilter';
 
 function App() {
 
@@ -25,6 +26,8 @@ function App() {
     <h1>News Reader App</h1>
     
     <SearchBar />
+
+    <CategoryFilter />
   
     </div>
 

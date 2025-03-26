@@ -1,6 +1,6 @@
 const categories = ['business', 'entertainment', 'general', 'health', 'science', 'sports', 'technology'];
 
-function categoryFilter({onSelectCategory}){
+function CategoryFilter({onSelectCategory}){
 
   
     return(
@@ -22,4 +22,4 @@ function categoryFilter({onSelectCategory}){
         </>
     );
 }
-export default categoryFilter;
+export default CategoryFilter;
