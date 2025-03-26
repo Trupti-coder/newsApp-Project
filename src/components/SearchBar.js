@@ -22,6 +22,8 @@ function SearchBar({onSearch}){
 
             />
 
+            <button onClick={handleSearch}>Search</button>
+
         </div>
         </>
     );
