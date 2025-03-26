@@ -17,4 +17,12 @@ export const fetchNews = async (category = '', query = '') =>{
     }
 
 
-}
+    const data = await response.json();
+    return data.articles;
+  } catch (error) {
+    console.error('Error fetching news:', error);
+    return [];
+  }
+
+
+};
