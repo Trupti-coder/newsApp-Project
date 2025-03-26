@@ -8,11 +8,11 @@ function Bookmarks({bookmarks}){
                 bookmarks.map((article,index)=>(
                     <div>
 
-
-
-
-
                         
+                        <h3>{article.title}</h3>
+                        <a href={article.url} target="_blank" rel="noopener noreferrer">Read more</a>
+
+                       
                     </div>
                 ))
             )}
