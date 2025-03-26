@@ -6,7 +6,8 @@ import SearchBar from './components/SearchBar';
 import CategoryFilter from './components/CategoryFilter';
 import NewsList from './components/NewsList';
 import Bookmarks from './components/Bookmarks';
-import CategoryFilter from './components/CategoryFilter';
+import { fetchNews } from './api';
+
 
 function App() {
 
@@ -45,13 +46,10 @@ function App() {
       <Bookmarks bookmarks={bookmarks} />
 
     
-  
+
     </div>
 
-    
-
-
-
+  
     </>
   );
 }
