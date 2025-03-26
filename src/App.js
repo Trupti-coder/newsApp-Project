@@ -4,6 +4,9 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import SearchBar from './components/SearchBar';
 import categoryFilter from './components/CategoryFilter';
+import NewsList from './components/NewsList';
+import Bookmarks from './components/Bookmarks';
+import CategoryFilter from './components/CategoryFilter';
 
 function App() {
 
@@ -27,7 +30,13 @@ function App() {
     
     <SearchBar />
 
-    <CategoryFilter />
+    <h1>News Reader App</h1>
+      <SearchBar onSearch={setQuery} />
+      <CategoryFilter onSelectCategory={setCategory} />
+      <NewsList articles={articles} onBookmark={handleBookmark} />
+      <Bookmarks bookmarks={bookmarks} />
+
+    
   
     </div>
 
