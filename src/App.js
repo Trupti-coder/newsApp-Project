@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 import './App.css';
 import SearchBar from './components/SearchBar';
-import categoryFilter from './components/CategoryFilter';
+import CategoryFilter from './components/CategoryFilter';
 import NewsList from './components/NewsList';
 import Bookmarks from './components/Bookmarks';
 import CategoryFilter from './components/CategoryFilter';
@@ -19,6 +19,14 @@ function App() {
   useEffect(()=>{
     fetchNews(category,query).then(setArticles)
   },[category,query])
+
+
+  const handleBookmark = (article) => {
+    // Prevent duplicate bookmarks
+    if (!bookmarks.find((item) => item.url === article.url)) {
+      setBookmarks((prev) => [...prev, article]);
+    }
+  };
 
 
 
