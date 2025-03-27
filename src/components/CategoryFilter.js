@@ -1,6 +1,10 @@
-const categories = ['business', 'entertainment', 'general', 'health', 'science', 'sports', 'technology'];
 
 import styles from './CategoryFilter.module.css';
+
+
+const categories = ['business', 'entertainment', 'general', 'health', 'science', 'sports', 'technology'];
+
+
 
 function CategoryFilter({onSelectCategory}){
 
