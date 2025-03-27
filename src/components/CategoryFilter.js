@@ -16,7 +16,7 @@ function CategoryFilter({onSelectCategory}){
 
         <select onChange={(event)=>onSelectCategory(event.target.value)}>
 
-<option value="">All categories</option>
+<option value="" className={styles.category}>All categories</option>
 
 {categories.map((category)=>(
 
