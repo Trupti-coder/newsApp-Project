@@ -1,3 +1,5 @@
+
+import styles from './NewsItem.module.css';
 function NewsItem({article,onBookmark}){
 
     return(
