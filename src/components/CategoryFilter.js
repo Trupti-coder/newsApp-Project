@@ -1,24 +1,29 @@
 const categories = ['business', 'entertainment', 'general', 'health', 'science', 'sports', 'technology'];
 
+import styles from './CategoryFilter.module.css';
+
 function CategoryFilter({onSelectCategory}){
 
   
     return(
         <>
 
+        <div className={styles.container}>
+
         <select onChange={(event)=>onSelectCategory(event.target.value)}>
 
-            <option value="">All categories</option>
-            
-            {categories.map((category)=>(
+<option value="">All categories</option>
 
-                <option key={category} value={category}>{category}</option>
-            ))}
-        
+{categories.map((category)=>(
 
-        </select>
+    <option key={category} value={category}>{category}</option>
+))}
 
 
+</select>
+
+
+        </div>
         </>
     );
 }
