@@ -1,31 +1,29 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import styles from "./SearchBar.module.css";
 
-function SearchBar({onSearch}){
+function SearchBar({ onSearch }) {
+  const [query, setQuery] = useState("");
 
-    const[query,setQuery]=useState('');
-
-    const handleSearch=()=>{
-
-        onSearch(query);
+  const handleSearch = () => {
+    if (query.trim()) {
+      onSearch(query);
     }
+  };
 
-    
-    return(
-        <>
-        <div >
-
-            <input
-            type="text"
-            placeholder="Search for news..."
-            value={query}
-            onChange={(event)=>setQuery(event.target.value)}
-
-            />
-
-            <button onClick={handleSearch}>Search</button>
-
-        </div>
-        </>
-    );
+  return (
+    <div className={styles.container}>
+      <input
+        type="text"
+        placeholder="Search for news..."
+        value={query}
+        onChange={(event) => setQuery(event.target.value)}
+        className={styles.input}
+      />
+      <button onClick={handleSearch} className={styles.button}>
+        Search
+      </button>
+    </div>
+  );
 }
+
 export default SearchBar;
