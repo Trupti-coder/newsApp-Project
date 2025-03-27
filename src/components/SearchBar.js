@@ -12,6 +12,7 @@ function SearchBar({ onSearch }) {
 
   return (
     <div className={styles.container}>
+        <h1>News Reader App</h1><br></br>
       <input
         type="text"
         placeholder="Search for news..."
