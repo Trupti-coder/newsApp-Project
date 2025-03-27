@@ -36,7 +36,7 @@ function App() {
     <div>
 
 
-    
+      <h1>News Reader App</h1>
       <SearchBar onSearch={setQuery} />
       <CategoryFilter onSelectCategory={setCategory} />
       <NewsList articles={articles} onBookmark={handleBookmark} />
