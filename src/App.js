@@ -35,9 +35,6 @@ function App() {
     <>
     <div>
 
-    <h1>News Reader App</h1>
-    
-    <SearchBar />
 
     <h1>News Reader App</h1>
       <SearchBar onSearch={setQuery} />
