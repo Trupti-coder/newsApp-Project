@@ -12,7 +12,7 @@ function Bookmarks({bookmarks}){
 
                         
                         <h3>{article.title}</h3>
-                        <a href={article.url} target="_blank" rel="noopener noreferrer">Read more</a>
+                        <a href={article.url} target="_blank" rel="noopener noreferrer" className={styles.read}>Read more</a>
 
                        
                     </div>
