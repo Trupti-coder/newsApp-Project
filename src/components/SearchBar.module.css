@@ -16,16 +16,16 @@
   }
 
   input:focus {
-    border-color: #007bff;
+    border-color: #57f2f2;
     outline: none;
   }
 
   button {
-    background-color: #007bff;
+    background-color: #dc4a9d;
     color: white;
     border: none;
     padding: 12px 24px;
-    border-radius: 25px;
+    border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -33,9 +33,9 @@
 
 
   button:hover {
-    background-color: #0056b3;
+    background-color: #e69aad;
   }
   
   button:active {
-    background-color: #004080;
+    background-color: #6c7b8b;
   }
