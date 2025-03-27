@@ -5,3 +5,8 @@ h2{
 .bookmark{
     text-align: center;
 }
+
+.read{
+    text-align: center;
+    justify-content: center;
+}
